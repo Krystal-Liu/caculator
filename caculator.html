@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="screen" value="0">
+        <table>
+            <tr>
+                <td><input type="button" value="AC" onclick="fun(this.value)"></td>
+                <td><input type="button" value="Back" onclick="fun(this.value)"></td>
+                <td><input id="operate" type="button" value="%"  onclick="key(this.value)"></td>
+                <td><input id="operate" type="button" value="/" onclick="key(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input id="num" type="button" value="7" onclick="caculator(this.value)"></td>
+                <td><input id="num" type="button" value="8" onclick="caculator(this.value)"></td>
+                <td><input id="num" type="button" value="9" onclick="caculator(this.value)"></td>
+                <td><input id="operate" type="button" value="*" onclick="key(this.value)"></td>
+            </tr>
+                <td><input id="num" type="button" value="4" onclick="caculator(this.value)"></td>
+                <td><input id="num" type="button" value="5" onclick="caculator(this.value)"></td>
+                <td><input id="num" type="button" value="6" onclick="caculator(this.value)"></td>
+                <td><input id="operate" type="button" value="-" onclick="key(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input id="num1" type="button" value="1" onclick="caculator(this.value)"></td>
+                <td><input id="num" type="button" value="2" onclick="caculator(this.value)"></td>
+                <td><input id="num" type="button" value="3" onclick="caculator(this.value)"></td>
+                <td><input id="operate" type="button" value="+" onclick="key(this.value)"></td>
+            </tr>
+            <tr>
+               <td colspan="2"><input id="num" type="button" value="0" class="combine" onclick="caculator(this.value)"></td>
+               <td><input id="operate" type="button" value="." onclick="dot(this.value)"></td>
+                <td><input id="operate" type="button" value="=" onclick="fun(this.value)"></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="js/caculator.js"></script>
+</body>
+</html>
